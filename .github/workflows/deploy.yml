@@ -58,27 +58,10 @@ jobs:
       - name: Checkout                # 检查
         uses: actions/checkout@v2
 
-      - name: Sed Config Base         # 配置基础路径
-        shell: bash
-        run: |
-          sed -i  's/doc-next/blog/g' ./.vitepress/config.js
-
       - name: use Node.js 14          # 使用node
         uses: actions/setup-node@v2.1.2
         with:
           node-version: '14.x'
-
-      - name: Get yarn cache          # 获取yarn 缓存
-        id: yarn-cache
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Cache dependencies      # 缓存依赖
-        uses: actions/cache@v2
-        with:
-          path: ${{ steps.yarn-cache.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
 
       - name: Build                   #构建
         run: |
