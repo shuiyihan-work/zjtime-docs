@@ -2,7 +2,7 @@
 
 ::: tip
 
-列举了一些常见的问题。有问题可以先来这里寻找，如果没有可以在 [issue](https://github.com/anncwb/vue-vben-admin/issues) 提。
+列举了一些常见的问题。有问题可以先来这里寻找，如果没有可以在 [issue](https://github.com/shuiyihan-work/zjtime-docs/issues) 提。
 
 :::
 
@@ -10,11 +10,11 @@
 
 遇到问题,可以先从以下几个方面查找
 
-1. 对应模块的 GitHub 仓库 [issue](https://github.com/anncwb/vue-vben-admin/issues) 搜索
+1. 对应模块的 GitHub 仓库 [issue](https://github.com/shuiyihan-work/zjtime-docs/issues) 搜索
 2. 从[google](https://www.google.com)搜索问题
 3. 从[百度](https://www.百度.com)搜索问题
-4. 在下面列表找不到问题可以到 issue 提问 [issues](https://github.com/anncwb/vue-vben-admin/issues)
-5. 如果不是问题类型的，需要讨论的，请到 [discussions](https://github.com/anncwb/vue-vben-admin/discussions) 讨论
+4. 在下面列表找不到问题可以到 issue 提问 [issues](https://github.com/shuiyihan-work/zjtime-docs/issues)
+5. 如果不是问题类型的，需要讨论的，请到 [discussions](https://github.com/shuiyihan-work/zjtime-docs/discussions) 讨论
 
 ## 关于缓存更新问题
 
@@ -179,7 +179,7 @@ getCurrentInstance().ctx.xxxx;
 
 ## 模版区别
 
-- [Vue-Vben-Admin](https://github.com/anncwb/vue-vben-admin) - 是包含 Demo 示例的,个人建议不要在这上面进行开发。当然，你如果动手能力强的话可以直接改。
+- [Vue-Vben-Admin](https://github.com/shuiyihan-work/zjtime-docs) - 是包含 Demo 示例的,个人建议不要在这上面进行开发。当然，你如果动手能力强的话可以直接改。
 - [Vue-Vben-Admin-Thin-Next](https://github.com/anncwb/vben-admin-thin-next) 精简了代码后的模版项目。适合在这基础上进行二次开发。
 
 ## 环境问题

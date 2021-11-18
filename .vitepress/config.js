@@ -4,15 +4,14 @@
  */
 module.exports = {
   base: '/zjtime-docs',
-  title: 'Vben Admin',
+  title: 'Docs',
   lang: 'zh-CN',
-  description: '一个开箱即用的前端框架',
+  description: '学习笔记',
   head: createHead(),
   themeConfig: {
-    repo: 'anncwb/vue-vben-admin',
-    docsRepo: 'anncwb/vue-vben-admin-doc',
-    logo: '/logo.png',
-    docsBranch: 'main',
+    repo: 'shuiyihan-work/zjtime-docs',
+    docsRepo: 'shuiyihan-work/zjtime-docs',
+    docsBranch: 'zjtime',
     editLinks: true,
     editLinkText: '为此页提供修改建议',
     nav: createNav(),
@@ -43,7 +42,7 @@ function createHead() {
           'width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no',
       },
     ],
-    ['meta', { name: 'keywords', content: 'vue vben admin docs' }],
+    ['meta', { name: 'keywords', content: 'vue Docs docs' }],
     ['link', { rel: 'icon', href: '/favicon.ico' }],
   ];
 }
@@ -106,7 +105,7 @@ function createNav() {
         },
         {
           text: '完整版源码',
-          link: 'https://github.com/anncwb/vue-vben-admin',
+          link: 'https://github.com/shuiyihan-work/zjtime-docs',
         },
         {
           text: '精简版预览',
@@ -118,11 +117,11 @@ function createNav() {
         },
         {
           text: '文档源码',
-          link: 'https://github.com/anncwb/vue-vben-admin-doc',
+          link: 'https://github.com/shuiyihan-work/zjtime-docs',
         },
         {
           text: '更新日志',
-          link: 'https://github.com/anncwb/vue-vben-admin/blob/main/CHANGELOG.md',
+          link: 'https://github.com/shuiyihan-work/zjtime-docs/blob/main/CHANGELOG.md',
         },
       ],
     },

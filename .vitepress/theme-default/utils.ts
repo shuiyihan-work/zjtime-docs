@@ -5,14 +5,17 @@ export const extRE = /(index)?\.(md|html)$/
 export const endingSlashRE = /\/$/
 export const outboundRE = /^[a-z]+:/i
 
+//是否null
 export function isNullish(value: any): value is null | undefined {
   return value === null || value === undefined
 }
 
+//是否array
 export function isArray(value: any): value is any[] {
   return Array.isArray(value)
 }
 
+//是否
 export function isExternal(path: string): boolean {
   return outboundRE.test(path)
 }

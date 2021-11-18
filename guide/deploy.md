@@ -191,7 +191,7 @@ VITE_PUBLIC_PATH=/xxx/
 - **hash** 默认会在 url 后面拼接`#`
 - **history** 则不会，不过 `history` 需要服务器配合
 
-可在 [src/router/index.ts](https://github.com/anncwb/vue-vben-admin/tree/main/src/router/index.ts) 内进行 mode 修改
+可在 [src/router/index.ts](https://github.com/shuiyihan-work/zjtime-docs/tree/main/src/router/index.ts) 内进行 mode 修改
 
 ```ts
 import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router';

@@ -4,7 +4,7 @@
 
 ## 环境变量配置
 
-项目的环境变量配置位于项目根目录下的 [.env](https://github.com/anncwb/vue-vben-admin/blob/main/.env)、[.env.development](https://github.com/anncwb/vue-vben-admin/blob/main/.env.development)、[.env.production](https://github.com/anncwb/vue-vben-admin/blob/main/.env.production)
+项目的环境变量配置位于项目根目录下的 [.env](https://github.com/shuiyihan-work/zjtime-docs/blob/main/.env)、[.env.development](https://github.com/shuiyihan-work/zjtime-docs/blob/main/.env.development)、[.env.production](https://github.com/shuiyihan-work/zjtime-docs/blob/main/.env.production)
 
 具体可以参考 [Vite 文档](https://github.com/vitejs/vite#modes-and-environment-variables)
 
@@ -38,7 +38,7 @@ console.log(import.meta.env.VITE_PROT);
 # 端口号
 VITE_PORT=3100
 # 网站标题
-VITE_GLOB_APP_TITLE=vben admin
+VITE_GLOB_APP_TITLE=Docs
 # 简称，用于配置文件名字 不要出现空格、数字开头等特殊字符
 VITE_GLOB_APP_SHORT_NAME=vben_admin
 ```
@@ -116,7 +116,7 @@ VITE_LEGACY = false
 // _app.config.js
 // 变量名命名规则  __PRODUCTION__xxx_CONF__   xxx：为.env配置的VITE_GLOB_APP_SHORT_NAME
 window.__PRODUCTION__VUE_VBEN_ADMIN__CONF__ = {
-  VITE_GLOB_APP_TITLE: 'vben admin',
+  VITE_GLOB_APP_TITLE: 'Docs',
   VITE_GLOB_APP_SHORT_NAME: 'vue_vben_admin',
   VITE_GLOB_API_URL: '/app',
   VITE_GLOB_API_URL_PREFIX: '/',
@@ -130,7 +130,7 @@ window.__PRODUCTION__VUE_VBEN_ADMIN__CONF__ = {
 
 ### 如何获取全局变量
 
-想要获取 `_app.config.js` 内的变量，可以使用 [src/hooks/setting/index.ts](https://github.com/anncwb/vue-vben-admin/tree/main/src/hooks/setting/index.ts) 提供的函数来进行获取
+想要获取 `_app.config.js` 内的变量，可以使用 [src/hooks/setting/index.ts](https://github.com/shuiyihan-work/zjtime-docs/tree/main/src/hooks/setting/index.ts) 提供的函数来进行获取
 
 ### 如何新增(新增一个可动态修改的配置项)
 
@@ -138,7 +138,7 @@ window.__PRODUCTION__VUE_VBEN_ADMIN__CONF__ = {
 
 2. `VITE_GLOB_` 开头的变量会自动加入环境变量，通过在 `src/types/config.d.ts` 内修改 `GlobEnvConfig` 和 `GlobConfig` 两个环境变量的值来定义新添加的类型
 
-3. [useGlobSetting](https://github.com/anncwb/vue-vben-admin/tree/main/src/hooks/setting/index.ts) 函数中添加刚新增的返回值即可
+3. [useGlobSetting](https://github.com/shuiyihan-work/zjtime-docs/tree/main/src/hooks/setting/index.ts) 函数中添加刚新增的返回值即可
 
 ```js
 const {
@@ -173,7 +173,7 @@ export const useGlobSetting = (): SettingWrap => {
 
 ### 配置文件路径
 
-[src/settings/projectSetting.ts](https://github.com/anncwb/vue-vben-admin/tree/main/src/settings/projectSetting.ts)
+[src/settings/projectSetting.ts](https://github.com/shuiyihan-work/zjtime-docs/tree/main/src/settings/projectSetting.ts)
 
 ### 说明
 
@@ -328,9 +328,9 @@ const setting: ProjectConfig = {
 
 用于配置缓存内容加密信息，对缓存到浏览器的信息进行 AES 加密
 
-在 [/@/settings/encryptionSetting.ts](https://github.com/anncwb/vue-vben-admin/blob/main/src/settings/encryptionSetting.ts) 内可以配置 `localStorage` 及 `sessionStorage` 缓存信息
+在 [/@/settings/encryptionSetting.ts](https://github.com/shuiyihan-work/zjtime-docs/blob/main/src/settings/encryptionSetting.ts) 内可以配置 `localStorage` 及 `sessionStorage` 缓存信息
 
-**前提:** 使用项目自带的缓存工具类 [/@/utils/cache](https://github.com/anncwb/vue-vben-admin/blob/main/src/utils/cache/index.ts) 来进行缓存操作
+**前提:** 使用项目自带的缓存工具类 [/@/utils/cache](https://github.com/shuiyihan-work/zjtime-docs/blob/main/src/utils/cache/index.ts) 来进行缓存操作
 
 ```ts
 import { isDevMode } from '/@/utils/env';
@@ -352,7 +352,7 @@ export const enableStorageEncryption = !isDevMode();
 
 用于配置多语言信息
 
-在 [src/settings/localeSetting.ts](https://github.com/anncwb/vue-vben-admin/tree/main/src/settings/localeSetting.ts) 内配置
+在 [src/settings/localeSetting.ts](https://github.com/shuiyihan-work/zjtime-docs/tree/main/src/settings/localeSetting.ts) 内配置
 
 ```ts
 export const LOCALE: { [key: string]: LocaleType } = {
@@ -386,7 +386,7 @@ export const localeList: DropMenu[] = [
 
 ## 主题色配置
 
-默认全局主题色配置位于 [build/config/glob/themeConfig.ts](https://github.com/anncwb/vue-vben-admin/tree/main/build/config/themeConfig.ts) 内
+默认全局主题色配置位于 [build/config/glob/themeConfig.ts](https://github.com/shuiyihan-work/zjtime-docs/tree/main/build/config/themeConfig.ts) 内
 
 只需要修改 primaryColor 为您需要的配色，然后重新执行 `yarn serve` 即可
 
@@ -403,13 +403,13 @@ export const primaryColor = '#0960bd';
 
 用于修改项目内组件 class 的统一前缀
 
-- 在 [src/settings/designSetting.ts](https://github.com/anncwb/vue-vben-admin/blob/main/src/settings/designSetting.ts) 内配置
+- 在 [src/settings/designSetting.ts](https://github.com/shuiyihan-work/zjtime-docs/blob/main/src/settings/designSetting.ts) 内配置
 
 ```ts
 export const prefixCls = 'vben';
 ```
 
-- 在 [src/design/var/index.less](https://github.com/anncwb/vue-vben-admin/blob/main/src/design/var/index.less) 配置 css 前缀
+- 在 [src/design/var/index.less](https://github.com/shuiyihan-work/zjtime-docs/blob/main/src/design/var/index.less) 配置 css 前缀
 
 ```less
 @namespace: vben;
@@ -444,7 +444,7 @@ const { prefixCls } = useDesign('app-logo');
 
 用于预设一些颜色数组
 
-在 [src/settings/designSetting.ts](https://github.com/anncwb/vue-vben-admin/tree/main/src/settings/designSetting.ts) 内配置
+在 [src/settings/designSetting.ts](https://github.com/shuiyihan-work/zjtime-docs/tree/main/src/settings/designSetting.ts) 内配置
 
 ```ts
 //  app主题色预设
@@ -493,7 +493,7 @@ export const SIDE_BAR_BG_COLOR_LIST: string[] = [
 
 ## 组件默认参数配置
 
-在 [src/settings/componentSetting.ts](https://github.com/anncwb/vue-vben-admin/tree/main/src/settings/componentSetting.ts) 内配置
+在 [src/settings/componentSetting.ts](https://github.com/shuiyihan-work/zjtime-docs/tree/main/src/settings/componentSetting.ts) 内配置
 
 ```ts
 // 用于配置某些组件的常规配置，而无需修改组件
